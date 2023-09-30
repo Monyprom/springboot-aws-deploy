@@ -19,7 +19,7 @@ post_build:
   commands:
     - echo Build completed on `date`
     - echo pushing to repo
-    - docker push $REPOSITORY_URI:latest .
+    - docker push $REPOSITORY_URI:latest 
     - docker push $REPOSITORY_URI:$IMAGE_TAG
     - echo Writing image definition file...
     - DOCKER_CONTAINER_NAME=spring-demo-ecr-container
